@@ -14,8 +14,8 @@ interface AttackProps {
 }
 
 const AccordionDefense: React.FC<AttackProps> = ({
-    rang,
     note,
+    rang,
     tirsPM,
     taclesPM,
     interceptionsPM,

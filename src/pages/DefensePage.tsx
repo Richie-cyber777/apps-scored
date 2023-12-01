@@ -116,6 +116,7 @@ const DefensePage: React.FC = () => {
             rang={index+1}
             note={equipe.note}
             tirsPM={equipe.tirsPM}
+            taclesPM={equipe.taclesPM}
             interceptionsPM={equipe.interceptionsPM}
             fautesPM={equipe.fautesPM}
             horsJeuxPM={equipe.horsJeuxPM}
