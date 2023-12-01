@@ -44,6 +44,7 @@ interface Equipe {
     };
   }
   
+
 const SegmentedPage: React.FC = () => {
   const [equipeData, setEquipeData] = useState<Equipe[]>([]);
   const [activeTab, setActiveTab] = useState("general");
@@ -77,11 +78,9 @@ const SegmentedPage: React.FC = () => {
 
             {/* <IonSearchbar value="Value"></IonSearchbar> */}
 
-            <IonHeader>
-                <IonToolbar>
-                    <IonSearchbar></IonSearchbar>
-                </IonToolbar>
-            </IonHeader>
+            <IonToolbar>
+                <IonSearchbar></IonSearchbar>
+            </IonToolbar>
         
             <IonToolbar>
                 {/* <IonSegment value={activeTab} onIonChange={(e) => setActiveTab(e.detail.value as string)}>
@@ -99,7 +98,7 @@ const SegmentedPage: React.FC = () => {
                     <IonSegmentButton value="general">
                         <IonLabel>General</IonLabel>
                     </IonSegmentButton>
-                    <IonSegmentButton value="exterior">
+                    <IonSegmentButton value="exterieur">
                         <IonLabel>Exterior</IonLabel>
                     </IonSegmentButton>
                     <IonSegmentButton value="domicile">
@@ -107,7 +106,7 @@ const SegmentedPage: React.FC = () => {
                     </IonSegmentButton>
                 </IonSegment>
             </IonToolbar>
-            
+              
         </IonHeader>
         
         <IonContent fullscreen>
