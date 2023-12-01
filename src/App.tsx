@@ -34,26 +34,22 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
 
-        <Route exact path="/home">
+        {/* <Route exact path="/home">
           <Home />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
-        </Route>
+        </Route> */}
 
         <Route exact path="/menu">
           <Menu />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/menu" />
-        </Route>
+
 
         <Route exact path="/segmented">
           <SegmentedPage />
         </Route>
-        <Route exact path="/">
-          <Redirect to="/segmented" />
-        </Route>
+
 
         <Route exact path="/attack">
           <AttackPage />
@@ -65,7 +61,7 @@ const App: React.FC = () => (
 
         {/* Redirect to a default route if none of the above matches */}
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/menu" />
         </Route>
 
         
